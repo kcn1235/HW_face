@@ -19,7 +19,7 @@ python dataset/HW_1_Face/raw/sort.py
 
 ## face detection
 
-Using mtcnn to align face bounding box. Run
+Using mtcnn to align face bounding box. Run train set:
 
 ```bash
 python align/align_dataset_mtcnn.py \
@@ -30,7 +30,7 @@ dataset/HW_1_Face/mtcnn_160/train \
 --gpu_memory_fraction=0.85
 ```
 
-and 
+and test set:
 
 ```bash
 python align/align_dataset_mtcnn.py \
@@ -46,6 +46,8 @@ to get face detection of the data
 ## face recognition
 
 This will use pretrained checkpoint in `saved_models/vgg_face2` trained on vgg_face2
+
+Download from [https://cloud.tsinghua.edu.cn/d/991128b4d19e43bf99fc/]()
 
 > in progress
 
