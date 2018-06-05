@@ -15,7 +15,7 @@ for i in range(2000):
 	im_Contrast.save(dirname + '/%d/%d_4.jpg' % (i,i))
 	im_noise = im
 	rows,cols,dims=im_noise.shape
-	for i in range(500):    
+	for j in range(500):    
 		x=np.random.randint(0,rows)
 		y=np.random.randint(0,cols)
 		im_noise[x,y,:]=255
@@ -32,7 +32,7 @@ for i in range(2000):
 	im_Contrast.save(dirname + '/%d/%d_9.jpg' % (i,i))
 	im_noise = im_transpose
 	rows,cols,dims=im_noise.shape
-	for i in range(500):    
+	for j in range(500):    
 		x=np.random.randint(0,rows)
 		y=np.random.randint(0,cols)
 		im_noise[x,y,:]=255
